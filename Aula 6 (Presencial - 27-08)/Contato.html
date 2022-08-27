@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário HTML</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style2708.css">
+</head>
+<body>
+    <form class="formulario" method="post"> 
+        <p style="font-size: 30px;"> Formulário de contato</p>
+        
+        <div class="campo">
+            <label for="nome">Digite seu Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div><br>
+        
+        <div class="campo">
+            <label for="telefone">Digite seu Telefone:</label><br>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+        </div><br>
+
+        <div class="campo">
+            <label for="email">Digite seu E-Mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail" required>
+        </div><br>        
+        <div class="campo_radiobox">
+            <span>Você deseja receber as novidades no seu e-mail?</span><br>
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+        </div><br>
+        <div class="campo">
+            <label for="mensagem">Digite sua mensagem:</label><br>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+        </div><br>
+
+       <center> <input type="submit" name="acao" value="Enviar"></center>
+    </form>
+</body>
+</html>
